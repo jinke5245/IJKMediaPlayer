@@ -1,0 +1,41 @@
+//
+//  IJKMediaFramework.h
+//  IJKMediaFramework
+//
+//  Created by jinke on 2017/12/29.
+//  Copyright © 2017年 jinke. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+FOUNDATION_EXPORT double IJKMediaFrameworkVersionNumber;
+FOUNDATION_EXPORT const unsigned char IJKMediaFrameworkVersionString[];
+
+#import <IJKMediaFramework/IJKMediaPlayback.h>
+#import <IJKMediaFramework/IJKMPMoviePlayerController.h>
+#import <IJKMediaFramework/IJKFFOptions.h>
+#import <IJKMediaFramework/IJKFFMoviePlayerController.h>
+#import <IJKMediaFramework/IJKAVMoviePlayerController.h>
+#import <IJKMediaFramework/IJKMediaModule.h>
+#import <IJKMediaFramework/IJKMediaPlayer.h>
+#import <IJKMediaFramework/IJKNotificationManager.h>
+#import <IJKMediaFramework/IJKKVOController.h>
+#import <IJKMediaFramework/IJKSDLGLViewProtocol.h>
+
+// backward compatible for old names
+#define IJKMediaPlaybackIsPreparedToPlayDidChangeNotification IJKMPMediaPlaybackIsPreparedToPlayDidChangeNotification
+#define IJKMoviePlayerLoadStateDidChangeNotification IJKMPMoviePlayerLoadStateDidChangeNotification
+#define IJKMoviePlayerPlaybackDidFinishNotification IJKMPMoviePlayerPlaybackDidFinishNotification
+#define IJKMoviePlayerPlaybackDidFinishReasonUserInfoKey IJKMPMoviePlayerPlaybackDidFinishReasonUserInfoKey
+#define IJKMoviePlayerPlaybackStateDidChangeNotification IJKMPMoviePlayerPlaybackStateDidChangeNotification
+#define IJKMoviePlayerIsAirPlayVideoActiveDidChangeNotification IJKMPMoviePlayerIsAirPlayVideoActiveDidChangeNotification
+#define IJKMoviePlayerVideoDecoderOpenNotification IJKMPMoviePlayerVideoDecoderOpenNotification
+#define IJKMoviePlayerFirstVideoFrameRenderedNotification IJKMPMoviePlayerFirstVideoFrameRenderedNotification
+#define IJKMoviePlayerFirstAudioFrameRenderedNotification IJKMPMoviePlayerFirstAudioFrameRenderedNotification
+#define IJKMoviePlayerFirstAudioFrameDecodedNotification IJKMPMoviePlayerFirstAudioFrameDecodedNotification
+#define IJKMoviePlayerFirstVideoFrameDecodedNotification IJKMPMoviePlayerFirstVideoFrameDecodedNotification
+#define IJKMoviePlayerOpenInputNotification IJKMPMoviePlayerOpenInputNotification
+#define IJKMoviePlayerFindStreamInfoNotification IJKMPMoviePlayerFindStreamInfoNotification
+#define IJKMoviePlayerComponentOpenNotification IJKMPMoviePlayerComponentOpenNotification
+
+#define IJKMPMoviePlayerAccurateSeekCompleteNotification IJKMPMoviePlayerAccurateSeekCompleteNotification
