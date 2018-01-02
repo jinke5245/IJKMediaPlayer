@@ -252,6 +252,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		793EE4771FFB1B2E008EAF21 /* prebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = prebuild.sh; sourceTree = "<group>"; };
 		7998E9C91FF5EA2600F9523E /* IJKMediaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IJKMediaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7998E9CB1FF5EA2600F9523E /* IJKMediaFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IJKMediaFramework.h; sourceTree = "<group>"; };
 		7998E9CC1FF5EA2600F9523E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -514,6 +515,7 @@
 		7998E8F31FF5E6AB00F9523E = {
 			isa = PBXGroup;
 			children = (
+				793EE4771FFB1B2E008EAF21 /* prebuild.sh */,
 				7998E9F91FF5EB5600F9523E /* Sources */,
 				7998E9CA1FF5EA2600F9523E /* IJKMediaFramework */,
 				7998ED341FF62C7B00F9523E /* IJKMediaFrameworkWithSSL */,
@@ -1002,7 +1004,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7998E9D01FF5EA2600F9523E /* Build configuration list for PBXNativeTarget "IJKMediaFramework" */;
 			buildPhases = (
-				7998ED3B1FF62CC300F9523E /* ijkversion.h */,
+				7998ED3B1FF62CC300F9523E /* [Custom] Prebuild */,
 				7998E9C41FF5EA2600F9523E /* Sources */,
 				7998E9C51FF5EA2600F9523E /* Frameworks */,
 				7998E9C61FF5EA2600F9523E /* Headers */,
@@ -1021,7 +1023,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7998ED381FF62C7B00F9523E /* Build configuration list for PBXNativeTarget "IJKMediaFrameworkWithSSL" */;
 			buildPhases = (
-				7998ED3C1FF62CEB00F9523E /* ijkversion.h */,
+				7998ED3C1FF62CEB00F9523E /* [Custom] Prebuild */,
 				7998ED2E1FF62C7B00F9523E /* Sources */,
 				7998ED2F1FF62C7B00F9523E /* Frameworks */,
 				7998ED301FF62C7B00F9523E /* Headers */,
@@ -1091,33 +1093,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7998ED3B1FF62CC300F9523E /* ijkversion.h */ = {
+		7998ED3B1FF62CC300F9523E /* [Custom] Prebuild */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = ijkversion.h;
+			name = "[Custom] Prebuild";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"${PROJECT_DIR}/ijkplayer/ijkmedia/ijkplayer/version.sh\" \"${PROJECT_DIR}/ijkplayer/ijkmedia/ijkplayer\" \"ijkversion.h\"";
+			shellScript = "sh \"${PROJECT_DIR}/prebuild.sh\"";
 		};
-		7998ED3C1FF62CEB00F9523E /* ijkversion.h */ = {
+		7998ED3C1FF62CEB00F9523E /* [Custom] Prebuild */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = ijkversion.h;
+			name = "[Custom] Prebuild";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"${PROJECT_DIR}/ijkplayer/ijkmedia/ijkplayer/version.sh\" \"${PROJECT_DIR}/ijkplayer/ijkmedia/ijkplayer\" \"ijkversion.h\"";
+			shellScript = "sh \"${PROJECT_DIR}/prebuild.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
